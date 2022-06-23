@@ -1,21 +1,15 @@
 import React from "react";
-import Random from "./download.jpg"; 
+import imgcard from "./download.jpg";
+import "./Card.css";
 
-export default function Cards() {
+export default function Cards({
+    Heading="Name",
+    Paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+    Random=(imgcard)
+}) {
     return(
-        <div>
-            <article className="card">
-                <img src={Random} alt=" " className="card__img" />
-                <div className="card__data">
-                <h2 className="card__title">The F1</h2>
-                <p className="card__descrption">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-                Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. 
-              
-                </p>
-                <a href="/" className="card__btn">For More</a>
-                </div>
-            </article>
+        <div >
+         
         </div>
     );
 }
